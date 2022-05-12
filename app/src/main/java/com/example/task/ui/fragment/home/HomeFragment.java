@@ -1,14 +1,14 @@
 package com.example.task.ui.fragment.home;
 
-
-
+import com.example.task.App;
 import com.example.task.databinding.FragmentHomeBinding;
 import com.example.task.ui.fragment.base.BaseFragment;
-import com.example.task.ui.fragment.dashboard.DashboardFragment;
 import com.example.task.ui.fragment.home.adapter.AdapterForTitle;
 import com.example.task.ui.model.ModelForTask;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     private final AdapterForTitle adapter = new AdapterForTitle();
@@ -29,17 +29,11 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> {
     }
 
     private void initAdapter() {
+
         binding.rvTask.setAdapter(adapter);
     }
 
     private void initListener() {
-        getParentFragmentManager().setFragmentResultListener(DashboardFragment.RESULT_HOME_KEY,
-                getViewLifecycleOwner(),
-                (requestKey, result) -> {
-                    String text = result.getString(DashboardFragment.HASH_KEY);
-                    adapter.addItem(new ModelForTask(text, new Date()));
-                });
-
+        adapter.addItem(App.getDatabase().dao().getAllList());
     }
-
 }

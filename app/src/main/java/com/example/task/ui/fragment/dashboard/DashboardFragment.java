@@ -1,20 +1,19 @@
 package com.example.task.ui.fragment.dashboard;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.PorterDuff;
-import android.os.Bundle;
-import android.view.View;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.example.task.App;
 import com.example.task.R;
 import com.example.task.databinding.FragmentDashboardBinding;
 import com.example.task.ui.fragment.base.BaseFragment;
+import com.example.task.ui.model.ModelForTask;
+
+import java.util.Date;
 
 public class DashboardFragment extends BaseFragment<FragmentDashboardBinding> {
-    static final public String HASH_KEY = "home_key";
-    static final public String RESULT_HOME_KEY = "result_home_key";
+
+
     @Override
     protected FragmentDashboardBinding getBinding() {
         return FragmentDashboardBinding.inflate(getLayoutInflater());
@@ -28,14 +27,18 @@ public class DashboardFragment extends BaseFragment<FragmentDashboardBinding> {
 
     @Override
     protected void setupObservers() {
+        initPref();
         initListener();
+    }
+
+    private void initPref() {
     }
 
 
     private void initListener() {
-        binding.btnSave.setOnClickListener(v ->{
-         sendDataToHomeFragment();
-         closeFragment();
+        binding.btnSave.setOnClickListener(v -> {
+            createDataToHomeFragment();
+            closeFragment();
         });
     }
 
@@ -45,11 +48,10 @@ public class DashboardFragment extends BaseFragment<FragmentDashboardBinding> {
         navController.navigateUp();
     }
 
-    private void sendDataToHomeFragment() {
+    private void createDataToHomeFragment() {
         String text = binding.edText.getText().toString();
-        Bundle bundle = new Bundle();
-        bundle.putString(HASH_KEY, text);
-        getParentFragmentManager().setFragmentResult(RESULT_HOME_KEY, bundle);
+        Date date = new Date();
+        App.getDatabase().dao().createInsert(new ModelForTask(text, date.toString()));
     }
 
 }

@@ -1,14 +1,28 @@
 package com.example.task.ui.model;
 
-import java.util.Date;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+
+@Entity
 public class ModelForTask {
+    @PrimaryKey(autoGenerate = true)
+    private long id;
     private String title;
-    private Date created;
+    private String created;
 
-    public ModelForTask(String title, Date created) {
+    public ModelForTask(String title, String created) {
         this.title = title;
         this.created = created;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -19,11 +33,11 @@ public class ModelForTask {
         this.title = title;
     }
 
-    public Date getCreated() {
+    public String getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
+    public void setCreated(String created) {
         this.created = created;
     }
 }
