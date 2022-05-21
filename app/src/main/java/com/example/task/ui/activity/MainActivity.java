@@ -7,6 +7,7 @@ import android.view.View;
 import com.example.task.R;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
@@ -57,4 +58,5 @@ public class MainActivity extends AppCompatActivity {
     private void initBottomNavigation() {
         NavigationUI.setupWithNavController(binding.bottomNavigation, controller);
     }
+
 }

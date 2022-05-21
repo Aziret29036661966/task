@@ -3,21 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/cicrle.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/circle.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/circle_second.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/defoult.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/f.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/for_animation.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/for_image_frg.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_add_task_24.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_sort_by_alpha_24.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_baseline_star_border_24.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/rectangle.xml" value="0.2005" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/drawable/selector.xml" value="0.2005" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/activity_main.xml" value="0.259375" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_base.xml" value="0.2453125" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_board_frament.xml" value="0.2129115006412997" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_dashboard.xml" value="0.259375" />
-        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_home.xml" value="0.259375" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_image_fragmnet.xml" value="0.259375" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/fragment_notifications.xml" value="0.2129115006412997" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/item_for_task.xml" value="0.259375" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/layout/item_for_view_pager.xml" value="0.21205643437366395" />
         <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/menu/bottom_nav_menu.xml" value="0.259375" />
+        <entry key="..\:/Users/rasul/AndroidStudioProjects/task/app/src/main/res/menu/more_vert.xml" value="0.2129115006412997" />
       </map>
     </option>
   </component>

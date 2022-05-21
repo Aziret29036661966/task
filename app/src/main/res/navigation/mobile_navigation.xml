@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_non_name"
-        android:name="com.example.task.ui.fragment.nonName.ImageFragment"
+        android:name="com.example.task.ui.fragment.image.ImageFragment"
         android:label="fragment_image_fragmnet"
         tools:layout="@layout/fragment_image_fragmnet" />
     <fragment

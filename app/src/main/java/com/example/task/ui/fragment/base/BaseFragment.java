@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 abstract public class BaseFragment <VB extends ViewBinding> extends Fragment{
@@ -32,4 +33,5 @@ abstract public class BaseFragment <VB extends ViewBinding> extends Fragment{
     public abstract void setupUI();
 
     protected abstract void setupObservers();
+
 }
